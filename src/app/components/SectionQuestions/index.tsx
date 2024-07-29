@@ -70,7 +70,7 @@ export function SectionQuestions() {
             friendly team.
           </p>
           <button className="py-3 px-5 bg-brand-600 rounded-lg text-white
-           leading-normal hover:bg-brand-700 trasition-colors">
+           leading-normal hover:bg-brand-700 transition">
             Get in touch
           </button>
         </div>
