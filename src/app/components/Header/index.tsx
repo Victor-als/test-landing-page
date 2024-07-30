@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { GridContainer } from "../GridContainer";
 import { ItemMenu } from "./item-menu";
+import { FiMenu } from "react-icons/fi";
 
 
 const menuItems = [
@@ -28,16 +29,17 @@ const menuItems = [
 
 export function Header () {
   return (
-    <header className="flex items-center sticky top-0 w-full h-[80px] z-50 bg-white border-b border-b-gray-100">
+    <header className="flex items-center sticky top-0 w-full h-[80px] z-50
+     bg-white border-b border-b-gray-100">
       <GridContainer className="flex items-center justify-between">
-        <div className="flex items-center gap-10">
+        <div className="w-full xl:w-auto flex items-center justify-between gap-10">
            <Image 
             src="/logo.svg" 
             width={142}
             height={32}
             alt="logo"
            />
-           <nav className="flex items-center gap-8">
+           <nav className="hidden xl:flex items-center gap-8">
              {menuItems.map(({url, title, dropdown}, index) => (
                 <ItemMenu 
                  key={index} 
@@ -48,10 +50,18 @@ export function Header () {
               ))
              }
            </nav>
+
+           <button>
+             <FiMenu 
+              size={30}
+              className="block xl:hidden "
+            />
+           </button>
         </div>
 
         <div>
           <Image 
+            className="hidden xl:block"
             src="/avatar.jpg"
             alt="avatar" 
             width={40}

@@ -5,22 +5,22 @@ import { ItemFeature } from "./ItemFeature";
 
 export function SectionFeatures(){
   return (
-    <section className="py-24">
+    <section className="py-16 xl:py-24">
       <GridContainer>
         <div className="text-center mb-16">
           <small className="block text-base text-brand-700 font-semibold mb-3">
             Features
           </small>
-          <h2 className="text-center text-4xl text-gray-900 tracking-tighter-[-0.72px]
+          <h2 className="text-center text-3xl xl:text-4xl text-gray-900 tracking-tighter-[-0.72px]
            font-semibold mb-5">
             Cutting-edge features for advanced analytics
           </h2>
-          <p className="text-xl/6 text-gray-600 max-w-3xl mx-auto">Powerful, self-serve product and growth analytics to help you 
+          <p className="xl:text-xl/6 text-base/relaxed text-gray-600 max-w-3xl mx-auto">Powerful, self-serve product and growth analytics to help you 
             convert, engage, and retain more users. Trusted by over 4,000 startups.
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gaap-x-8 gap-y-16">
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-x-8 gap-y-12 xl:gap-y-16">
           <ItemFeature 
            icon={<FiMail size={24} className="text-brand-600" />} 
            title="Share team inboxes" 

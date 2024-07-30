@@ -19,8 +19,8 @@ export function Question ({ title, response }: QuestionProps) {
   
   return (
     <div className="w-full first:pt-0 pt-6 pb-8">
-      <button onClick={HandleOpenQuestion} className="w-full flex items-center justify-between">
-        <h3 className="text-gray-900 text-xl/normal font-semibold">
+      <button onClick={HandleOpenQuestion} className="w-full flex items-center justify-between text-left">
+        <h3 className="text-gray-900 text-lg/normal xl:text-xl/normal font-semibold">
          { title }
         </h3>
         {open

@@ -4,13 +4,13 @@ import { Question } from "./Question";
 
 export function SectionQuestions() {
   return (
-    <section className="py-24">
+    <section className="pt-16 xl:pt-24">
       <GridContainer>
-        <div className="text-center mb-16 space-y-5">
-          <h2 className="text-4xl font-semibold text-gray-900 -traking-[0.72px]">
+        <div className="text-center mb-12 xl:mb-16 space-y-5">
+          <h2 className="text-3xl xl:text-4xl font-semibold text-gray-900 -traking-[0.72px]">
             Frequently asked questions
           </h2>
-          <p className="text-xl/6 text-gray-600">
+          <p className="text-lg/relaxed xl:text-xl/6 text-gray-600">
             Everything you need to know about the product and billing.
           </p>
         </div>
@@ -74,7 +74,7 @@ export function SectionQuestions() {
             Get in touch
           </button>
         </div>
-        <hr className="mt-24 border-gray-200"/>
+        <hr className="mt-16 xl:mt-24 border-gray-200"/>
       </GridContainer>
     </section>
   )

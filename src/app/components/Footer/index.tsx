@@ -5,9 +5,10 @@ import { menuCompanys, menuLegal, menuProducts, menuResources, menuSocial, menuU
 
 export function Footer () {
   return (
-    <footer className="pt-16 pb-12">
+    <footer className="py-12 xl:pt-16">
       <GridContainer >
-        <div className="flex items-start justify-between pb-16">
+        <div className="xl:flex grid grid-cols-2 items-start ml-10 xl:ml-0 
+         gap-8 xl:gap-0 justify-between pb-12 xl:pb-16">
           <ItemNav title="Product" itemsMenu={menuProducts} />
 
           <ItemNav title="Company" itemsMenu={menuCompanys} />
@@ -21,7 +22,8 @@ export function Footer () {
           <ItemNav title="Legal" itemsMenu={menuLegal} />
         </div>
 
-        <div className="flex items-center justify-between border-t border-gray-200 pt-8">
+        <div className="flex flex-col xl:flex-row xl:items-center items-start justify-between 
+          border-t gap-6 xl:gap-0 border-gray-200 pt-8">
           <Image
             src="/logo.svg" 
             width={142}

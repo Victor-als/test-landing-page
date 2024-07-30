@@ -4,7 +4,7 @@ import { GridContainer } from "../GridContainer";
 
 export function SectionTestimonials() {
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-16 xl:py-24 bg-gray-50">
       <GridContainer>
         <Image 
          src="/sisyphus.svg"
@@ -13,11 +13,11 @@ export function SectionTestimonials() {
          height={40}
          className="mx-auto"
         />
-        <h2 className="my-8 text-5xl/tight font-medium text-gray-900 -tracking-[0.96px]">
+        <h2 className="ml-5 my-8 xl:text-5xl/tight text-3xl/tight font-medium text-gray-900 -tracking-[0.96px]">
          We’ve been using Untitled to kick start every new project and can’t 
           imagine working without it.
         </h2>
-        <div >
+        <div className="flex flex-col justify-center items-center ">
           <Image 
            src="/avatar-2.png" 
            alt="" 

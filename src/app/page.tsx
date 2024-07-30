@@ -20,7 +20,7 @@ export default function Home() {
       <SectionAnalitycs />
       <SectionQuestions />
       <SectionLauch />
-      <SectionTrial />
+      <SectionTrial /> 
     </> 
   );
 }

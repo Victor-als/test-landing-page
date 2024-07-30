@@ -5,30 +5,31 @@ import { FiBarChart2, FiMail, FiZap } from "react-icons/fi";
 
 export function SectionAnalitycs() {
   return (
-    <section className="pt-24">
+    <section className="pt-16 xl:pt-24">
       <GridContainer>
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 xl:mb-16">
           <span className="inline-block py-1 px-3 bg-brand-50 rounded-2xl 
            text-sm/snug font-medium text-brand-700">
             Features
           </span>
-          <h2 className="text-4xl font-semibold text-gray-900 mt-4 mb-6">
+          <h2 className="text-3xl xl:text-4xl font-semibold text-gray-900 mt-4 mb-6">
             Cutting-edge features for advanced analytics
           </h2>
 
-          <p className="text-xl/normal text-gray-600 max-w-3xl mx-auto">
+          <p className="text-md/relaxed xl:text-xl/normal text-gray-600 max-w-3xl mx-auto">
             Powerful, self-serve product and growth analytics to help you 
             convert, engage, and retain more users. Trusted by over 4,000 startups.
           </p>
         </div>
 
-        <div className="relative w-full max-w-[888px] h-[561px] mx-auto mb-24">
+        <div className="relative w-full max-w-full xl:max-w-[888px] h-auto 
+          xl:h-[561px] mx-auto mb-12 xl:mb-24">
           <Image 
            src="/dashboard.png" 
            alt="dashboard" 
            width={768}
            height={512}
-           className="absolute -top-[15px] -right-[18px]"
+           className="hidden xl:block absolute -top-[15px] -right-[18px]"
           />
 
           <Image 
@@ -36,10 +37,10 @@ export function SectionAnalitycs() {
            alt="iphone" 
            width={244}
            height={497}
-           className="absolute bottom-0 left-0"
+           className="relative xl:absolute bottom-0 left-0 mx-auto"
           />
         </div>
-        <div className="flex items-start justify-between">
+        <div className="flex flex-col xl:flex-row xl:gap-0 gap-10 items-start justify-between">
           <ItemFeature 
             isBtn
             icon={<FiMail size={24} className="text-brand-600" />} 
@@ -62,7 +63,7 @@ export function SectionAnalitycs() {
               You can filter, export, and drilldown on the data in a couple clicks." 
           />
         </div>
-        <hr className="border-gray-200 mt-24"/>
+        <hr className="border-gray-200 mt-16 xl:mt-24"/>
       </GridContainer>
     </section>
   )
