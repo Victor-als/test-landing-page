@@ -31,4 +31,5 @@ npm run dev
 
 # Imagens da tela.
 
-![image](https://github.com/user-attachments/assets/a048d5fd-74ff-433a-a7d9-e598eb9a7e73)
+![image](https://github.com/user-attachments/assets/3116ef41-47f9-4705-ac4e-fa283ab6bbf9)
+
