@@ -30,6 +30,6 @@ npm run dev
 ```
 
 # Imagens da tela.
-
+![Image](https://github.com/user-attachments/assets/c6bcf492-e163-47d3-93be-07f958642437)
 ![image](https://github.com/user-attachments/assets/3116ef41-47f9-4705-ac4e-fa283ab6bbf9)
 
